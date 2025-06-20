@@ -31,6 +31,10 @@ app.use("/api/instructor", instructorRoutes);
 app.use("/api/user", userRoutes);
 
 
+app.get("/", (req, res) => {
+  res.send("API is running ✅");
+});
+
 // Start server
 const startServer = async () => {
   try {
